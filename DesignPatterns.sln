@@ -71,7 +71,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Low Of Demeter （迪米�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Open Close （开闭原则）", "6-Open Close （开闭原则）", "{456E470F-BBFD-47C4-9748-F231F3584DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigletonPattern", "SigletonPattern\SigletonPattern.csproj", "{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.SingletonPattern", "Com.SingletonPattern\Com.SingletonPattern.csproj", "{D713A2F1-A461-495E-8D74-D2846A70EA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonClient", "SingletonClient\SingletonClient.csproj", "{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,10 +81,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D713A2F1-A461-495E-8D74-D2846A70EA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D713A2F1-A461-495E-8D74-D2846A70EA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D713A2F1-A461-495E-8D74-D2846A70EA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D713A2F1-A461-495E-8D74-D2846A70EA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{A7313DA7-7D2B-4004-A157-ED9B3DE3C8F0} = {81ACFE36-5195-4370-8F79-5963E823B657}
 		{627DCF5A-0A57-4900-B3C4-29076651F594} = {81ACFE36-5195-4370-8F79-5963E823B657}
 		{456E470F-BBFD-47C4-9748-F231F3584DBD} = {81ACFE36-5195-4370-8F79-5963E823B657}
-		{7962B6CD-1297-4AC3-B6CE-64AB508FB8BA} = {D5806FD9-B26A-4059-B630-AB72EB4F0742}
+		{D713A2F1-A461-495E-8D74-D2846A70EA36} = {D5806FD9-B26A-4059-B630-AB72EB4F0742}
+		{EFBEE0B8-275D-4700-BCC3-78C79BEE0A57} = {D5806FD9-B26A-4059-B630-AB72EB4F0742}
 	EndGlobalSection
 EndGlobal
