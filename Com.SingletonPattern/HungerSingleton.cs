@@ -10,14 +10,14 @@ namespace Com.SingletonPattern
     /// 编写：WillieNi
     /// 日期：2015年07月10日
     /// </summary> 
-    public class NetSingleton
+    public class HungerSingleton
     {
         //饿汉单例模式，解决多线程并发出现多个实例问题
-        private static readonly NetSingleton instance = new NetSingleton();
+        private static readonly HungerSingleton instance = new HungerSingleton();
 
-        private NetSingleton() { }
+        private HungerSingleton() { }
 
-        public static NetSingleton Instance
+        public static HungerSingleton Instance
         {
             get
             {

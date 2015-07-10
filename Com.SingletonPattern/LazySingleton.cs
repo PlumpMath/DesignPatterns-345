@@ -6,22 +6,22 @@ using System.Text;
 namespace Com.SingletonPattern
 {
     /// <summary>
-    /// 功能：简单的单件模式类
+    /// 功能：懒汉式单例类.
     /// 编写：willieni
     /// 日期：2015年07月10日
-    /// 备注：多线程下可能有多个实例
+    /// 备注：在第一次调用的时候实例化自己，多线程下可能有多个实例
     /// </summary>
-    public class CommonSingleton : ISingleton
+    public class LazySingleton : ISingleton
     {
         /// <summary> 
         /// 私有的对象
         /// </summary>
-        private static CommonSingleton instance;
+        private static LazySingleton instance;
 
         /// <summary>
         /// 构造方法为Private
         /// </summary>
-        private CommonSingleton()
+        private LazySingleton()
         {
 
         }
@@ -29,13 +29,13 @@ namespace Com.SingletonPattern
         /// <summary>
         /// 公有的属性
         /// </summary>
-        public static CommonSingleton Instance
+        public static LazySingleton Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new CommonSingleton();
+                    instance = new LazySingleton();
                 }
 
                 return instance;

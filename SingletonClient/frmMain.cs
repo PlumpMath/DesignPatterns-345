@@ -248,8 +248,8 @@ namespace SingletonClient
 		/// <param name="e"></param>
 		private void btn_CommonSingleton_Click(object sender, System.EventArgs e)
 		{
-			CommonSingleton s1 = CommonSingleton.Instance;
-			CommonSingleton s2 = CommonSingleton.Instance;
+			LazySingleton s1 = LazySingleton.Instance;
+			LazySingleton s2 = LazySingleton.Instance;
 			
 			string strResult = "";
 			if(s1.Equals(s2))
@@ -294,8 +294,8 @@ namespace SingletonClient
 		/// <param name="e"></param>
 		private void btn_DotNetSigleton_Click(object sender, System.EventArgs e)
 		{
-			NetSingleton s1 = NetSingleton.Instance;
-			NetSingleton s2 = NetSingleton.Instance;
+			HungerSingleton s1 = HungerSingleton.Instance;
+			HungerSingleton s2 = HungerSingleton.Instance;
 			
 			string strResult = "";
 			if(s1.Equals(s2))

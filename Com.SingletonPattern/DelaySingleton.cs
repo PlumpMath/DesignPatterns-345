@@ -7,7 +7,7 @@ using System.Threading;
 namespace Com.SingletonPattern
 {
     /// <summary>
-    /// 功能：利用DotNet的特性实现单件模式
+    /// 功能：延迟加载单例模式 利用DotNet的特性
     /// 编写：willieni
     /// 日期：2015年07月10日
     /// 备注：延迟加载
