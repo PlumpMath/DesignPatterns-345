@@ -6,9 +6,10 @@ using System.Text;
 namespace Com.SingletonPattern
 {
     /// <summary>
-    /// 功能：利用DotNet的特性实现单件模式
+    /// 功能：饿汉单例模式
     /// 编写：WillieNi
     /// 日期：2015年07月10日
+    /// 解决多线程并发出现多个实例问题
     /// </summary> 
     public class HungerSingleton
     {
