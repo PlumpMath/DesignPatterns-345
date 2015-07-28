@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B19B5ACC-BB63-4BF7-A039-56E8CB4DEBE6}</ProjectGuid>
+    <ProjectGuid>{E49CA41A-1EDA-49DE-8FA5-FEB085838B4C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns.BuilderPattern</RootNamespace>
-    <AssemblyName>BuilderPattern</AssemblyName>
+    <RootNamespace>DesignPatterns.Builder.KFC</RootNamespace>
+    <AssemblyName>Builder.KFC</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,12 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder.cs" />
-    <Compile Include="ConcreteBuilder1.cs" />
-    <Compile Include="ConcreteBuilder2.cs" />
-    <Compile Include="Director.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="FoodManager.cs" />
+    <Compile Include="GoldBuilder.cs" />
+    <Compile Include="NormalBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
